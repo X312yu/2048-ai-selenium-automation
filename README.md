@@ -69,7 +69,7 @@ numpy : 處理 4x4 盤面矩陣運算與旋轉
 
 keyboard : 監聽全域快捷鍵（1/2/3/R/ESC）控制 AI 狀態
 
-
+## 套件安裝區塊
 pip install selenium webdriver-manager numpy keyboard
 
 
