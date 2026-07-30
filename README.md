@@ -50,15 +50,15 @@
     ├── Keep Playing Trigger
     └── Auto Retry Loop
 ```
-🛠 環境需求與套件設定 (Environment & Dependencies)
-1. 軟體環境 (Requirements)
+## 🛠 環境需求與套件設定 (Environment & Dependencies)
+### 1. 軟體環境 (Requirements)
 Python: 3.10.x (Recommended)
 
 Browser: Google Chrome (Latest Version)
 
 Target Site: 2048 Variations (Original) (支援 localStorage 狀態提取)
 
-2. Python 套件依存 (Python Packages)
+### 2. Python 套件依存 (Python Packages)
 專案核心僅使用以下主要第三方套件，架構極簡且便於快速部署：
 
 selenium : 自動化網頁控制與 DOM 操作
@@ -69,22 +69,26 @@ numpy : 處理 4x4 盤面矩陣運算與旋轉
 
 keyboard : 監聽全域快捷鍵（1/2/3/R/ESC）控制 AI 狀態
 
-Bash
-pip install selenium webdriver-manager numpy keyboard
-🚀 快速開始 (Quick Start)
-執行步驟 (Execution)
-複製專案 (Clone Repository):
 
-Bash
+pip install selenium webdriver-manager numpy keyboard
+
+
+## 🚀 快速開始 (Quick Start)
+## 執行步驟 (Execution)
+##  1.複製專案 (Clone Repository):
+
+
 git clone [https://github.com/X312yu/2048-ai-selenium-automation.git](https://github.com/X312yu/2048-ai-selenium-automation.git)
 cd 2048-ai-selenium-automation
-啟動 AI 自動化程式 (Run Main Script):
+
+##  2.啟動 AI 自動化程式 (Run Main Script):
 
 Windows 環境因 keyboard 套件監聽快捷鍵，建議以管理員權限 (Administrator) 執行命令提示字元或 VS Code：
 
-Bash
+
 python main.py
-Chrome 啟動說明:
+
+##  3.Chrome 啟動說明:
 
 程式會自動透過 webdriver-manager 載入 Driver 並啟動 Chrome。
 
@@ -92,7 +96,7 @@ Chrome 啟動說明:
 
 瀏覽器必須允許 JavaScript 執行，以確保動態 HUD (Heads-Up Display) 能正確注入呈現。
 
-📜 授權條款 (License)
+## 📜 授權條款 (License)
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
