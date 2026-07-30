@@ -49,3 +49,55 @@
     ├── Game Over / You Win Pop-up Detection
     ├── Keep Playing Trigger
     └── Auto Retry Loop
+```
+🛠 環境需求與套件設定 (Environment & Dependencies)
+1. 軟體環境 (Requirements)
+Python: 3.10.x (Recommended)
+
+Browser: Google Chrome (Latest Version)
+
+Target Site: 2048 Variations (Original) (支援 localStorage 狀態提取)
+
+2. Python 套件依存 (Python Packages)
+專案核心僅使用以下主要第三方套件，架構極簡且便於快速部署：
+
+selenium : 自動化網頁控制與 DOM 操作
+
+webdriver-manager : 自動匹配與下載對應版本的 ChromeDriver
+
+numpy : 處理 4x4 盤面矩陣運算與旋轉
+
+keyboard : 監聽全域快捷鍵（1/2/3/R/ESC）控制 AI 狀態
+
+Bash
+pip install selenium webdriver-manager numpy keyboard
+🚀 快速開始 (Quick Start)
+執行步驟 (Execution)
+複製專案 (Clone Repository):
+
+Bash
+git clone [https://github.com/X312yu/2048-ai-selenium-automation.git](https://github.com/X312yu/2048-ai-selenium-automation.git)
+cd 2048-ai-selenium-automation
+啟動 AI 自動化程式 (Run Main Script):
+
+Windows 環境因 keyboard 套件監聽快捷鍵，建議以管理員權限 (Administrator) 執行命令提示字元或 VS Code：
+
+Bash
+python main.py
+Chrome 啟動說明:
+
+程式會自動透過 webdriver-manager 載入 Driver 並啟動 Chrome。
+
+內建控制參數：--disable-infobars (隱藏自動測試提示)、--mute-audio (靜音)、--disable-notifications (關閉通知)。
+
+瀏覽器必須允許 JavaScript 執行，以確保動態 HUD (Heads-Up Display) 能正確注入呈現。
+
+📜 授權條款 (License)
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+---
+
+### ✨ 這次修改的精髓：
+* 徹底刪除了「演算法演進表」與任何深度學習（DDQN/CNN/TensorFlow/PyTorch）的字樣。
+* 整個專案敘事變得很純粹：**「這就是一個強大、穩定、能自動執行並帶有視覺化 HUD 的 2048 期望值 AI 自動化系統」**。
