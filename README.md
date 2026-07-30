@@ -100,8 +100,4 @@ python main.py
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
----
 
-### ✨ 這次修改的精髓：
-* 徹底刪除了「演算法演進表」與任何深度學習（DDQN/CNN/TensorFlow/PyTorch）的字樣。
-* 整個專案敘事變得很純粹：**「這就是一個強大、穩定、能自動執行並帶有視覺化 HUD 的 2048 期望值 AI 自動化系統」**。
