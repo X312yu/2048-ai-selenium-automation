@@ -1,10 +1,10 @@
-###2048 AI 自動化控制與測試系統 (Expectimax AI & Selenium Automation)
+### 2048 AI 自動化控制與測試系統 (Expectimax AI & Selenium Automation)
 
 中文： 一款針對 2048 網頁原版開發的 AI 自動化控制與決策系統，結合 Python、Selenium、Expectimax 搜尋演算法與 JS 動態 HUD 視覺化監控介面。
 
 English: An automated 2048 game AI agent built with Python, Selenium, and Expectimax search algorithm for the original 2048 web game, featuring an interactive HUD display.
 
-💡 專案亮點 (Key Features)
+## 💡 專案亮點 (Key Features)
 
 Expectimax 決策搜尋 (Expectimax Decision Search)：針對 2048 隨機生成方塊（90% 出 2, 10% 出 4）的機率特性，建構動態期望值搜尋模型，穩定突破 2048 / 4096 高分。
 
@@ -18,7 +18,7 @@ Expectimax 決策搜尋 (Expectimax Decision Search)：針對 2048 隨機生成�
 
 展演與穩定機制 (Showcase Mode & Auto Retry)：支援自動偵測 Game Over / You Win 彈窗並自動重試/繼續，實現無人值守循環展示。
 
-🏗 系統架構 (System Architecture)
+##　🏗 系統架構 (System Architecture)
 ```
 2048 AI Project
 │
@@ -51,9 +51,9 @@ Expectimax 決策搜尋 (Expectimax Decision Search)：針對 2048 隨機生成�
     └── Auto Retry Loop
 ```
 
-📈 研發里程碑與技術演進 (Technical Evolution)
+##　📈 研發里程碑與技術演進 (Technical Evolution)
 
-📌 階段一：自動化與資料奠基期 (Stages 1 - 4)
+## 📌 階段一：自動化與資料奠基期 (Stages 1 - 4)
 
 第一階段：研究專題方向
 
@@ -81,7 +81,7 @@ Expectimax 決策搜尋 (Expectimax Decision Search)：針對 2048 隨機生成�
 
 效能效益：免除了繁複的畫面解析與 OCR 延遲，保證決策大腦能以 100% 精準度讀取即時數據，大幅縮短每步擷取時間。
 
-📌 階段二：決策演算法迭代與瓶頸探索期 (Stages 5 - 9)
+## 📌 階段二：決策演算法迭代與瓶頸探索期 (Stages 5 - 9)
 
 第五階段：Rule-Based AI 規則嘗試
 
@@ -117,7 +117,7 @@ Expectimax 決策搜尋 (Expectimax Decision Search)：針對 2048 隨機生成�
 
 遇到瓶頸：2048 沒有「主動惡意」的對手。玩家移動後，是由系統以 90% 出現 2、10% 出現 4 的機率隨機生成方塊。強行使用 Minimax 會導致 AI 預測過於保守悲觀，進而做出不合情理的退縮決策。
 
-📌 階段三：Expectimax 與 Heuristics 終局方案 (Stages 10 - 12)
+## 📌 階段三：Expectimax 與 Heuristics 終局方案 (Stages 10 - 12)
 
 第十階段：Expectimax 機率期望搜尋
 
@@ -153,7 +153,7 @@ Empty Cells（空格最大化）：保留充足空格以降低卡死風險。
 
 剪枝策略：主動篩選並過濾非法移動（無效 Move），限制隨機節點的展開數量，成功在「思考品質」與「網頁控制即時性」之間取得最佳平衡。
 
-📌 階段四：產品級落地與高可觀測性展示 (Stages 13 - 17)
+## 📌 階段四：產品級落地與高可觀測性展示 (Stages 13 - 17)
 
 第十三階段：遊戲流程控制（You Win / Game Over 處理）
 
@@ -177,7 +177,7 @@ Empty Cells（空格最大化）：保留充足空格以降低卡死風險。
 
 專案總結：成功整合成一套集 「Expectimax 機率搜尋 + 多維 Heuristics 動態權重評分 + 100% 精準 LocalStorage 解析 + 視覺化 HUD 即時監控 + 異常自我恢復」 於一身的展示級高階 AI 自動化系統！
 
-📊 實測成果與效能指標 (Benchmarks & Performance)
+## 📊 實測成果與效能指標 (Benchmarks & Performance)
 
 經多次實驗測試，本系統在 Expectimax 與優化 Heuristic 架構下的運算及表現數據如下：
 
@@ -217,7 +217,7 @@ Empty Cells（空格最大化）：保留充足空格以降低卡死風險。
 
 0.5138 秒
 
-🛠 環境需求與套件設定 (Environment & Dependencies)
+## 🛠 環境需求與套件設定 (Environment & Dependencies)
 
 1. 軟體環境 (Requirements)
 
@@ -244,7 +244,7 @@ keyboard : 監聽全域快捷鍵（1/2/3/R/ESC）控制 AI 狀態
 pip install selenium webdriver-manager numpy keyboard
 
 
-🚀 快速開始 (Quick Start)
+## 🚀 快速開始 (Quick Start)
 
 執行步驟 (Execution)
 
@@ -256,7 +256,7 @@ cd 2048-ai-selenium-automation
 
 啟動 AI 自動化程式 (Run Main Script):
 
-⚠️ Windows 運行提示：因專案使用了 keyboard 套件監聽全域快捷鍵，在 Windows 環境下建議以 系統管理員權限 (Administrator) 執行命令提示字元 (CMD)、PowerShell 或 VS Code，以防快捷鍵監聽失效。
+## ⚠️ Windows 運行提示：因專案使用了 keyboard 套件監聽全域快捷鍵，在 Windows 環境下建議以 系統管理員權限 (Administrator) 執行命令提示字元 (CMD)、PowerShell 或 VS Code，以防快捷鍵監聽失效。
 
 python main.py
 
@@ -269,6 +269,6 @@ Chrome 啟動說明:
 
 瀏覽器必須允許 JavaScript 執行，以確保動態 HUD (Heads-Up Display) 能正確注入呈現。
 
-📜 授權條款 (License)
+## 📜 授權條款 (License)
 
 This project is licensed under the MIT License - see the LICENSE file for details.
