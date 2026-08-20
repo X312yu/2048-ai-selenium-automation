@@ -1,4 +1,4 @@
-### 2048 AI 自動化控制與測試系統 (Expectimax AI & Selenium Automation)
+# 2048 AI 自動化控制與測試系統 (Expectimax AI & Selenium Automation)
 
 中文： 一款針對 2048 網頁原版開發的 AI 自動化控制與決策系統，結合 Python、Selenium、Expectimax 搜尋演算法與 JS 動態 HUD 視覺化監控介面。
 
